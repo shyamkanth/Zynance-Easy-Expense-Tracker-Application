@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.StatsFragment">
+
+    <LinearLayout
+        android:id="@+id/layFilter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:gravity="center"
+        android:padding="10dp">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="Data View: "/>
+        <RadioGroup
+            android:id="@+id/filterRadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/radioBar"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+
+                android:text="Bar Chart"
+                android:scaleX="0.8"
+                android:scaleY="0.8"/>
+            <RadioButton
+                android:id="@+id/radioPie"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="Pie Chart"
+                android:scaleX="0.8"
+                android:scaleY="0.8"/>
+            <RadioButton
+                android:id="@+id/radioTable"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="Table"
+                android:scaleX="0.8"
+                android:scaleY="0.8"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/pieChart"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layFilter"
+        android:visibility="gone"
+        android:layout_marginVertical="16dp"/>
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/barChart"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layFilter"
+        android:layout_marginVertical="10dp"/>
+
+    <ScrollView
+        android:id="@+id/layTableScroll"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layFilter">
+        <android.widget.TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="top"
+            android:stretchColumns="1"
+            android:visibility="gone"
+            android:paddingBottom="10dp"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="5dp">
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#DDDDDD">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:padding="8dp"
+                    android:text="Serial No"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:padding="8dp"
+                    android:text="Category Name"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:padding="8dp"
+                    android:text="Total Expense"
+                    android:textStyle="bold" />
+            </TableRow>
+
+        </android.widget.TableLayout>
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

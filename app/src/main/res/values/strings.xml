@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Zynance</string>
+    <string name="hint_name">What should we call you?</string>
+    <string name="label_initial_balance">Current Balance :</string>
+    <string name="label_account_number">Account Number :</string>
+    <string name="label_ac_opening_date">Ac Opening Date :</string>
+    <string name="label_bank_name">Bank Name :</string>
+    <string name="label_name">Name :</string>
+    <string name="label_ifsc">Bank Code :</string>
+    <string name="hint_enter_your_ifsc_swift_code">Enter your bank code</string>
+    <string name="hint_your_current_balance">Your current balance</string>
+    <string name="hint_set_your_account_number">Set your account number</string>
+    <string name="hint_when_did_you_open_your_account">Account opening date?</string>
+    <string name="hint_write_your_desired_bank_name">Your desired bank name</string>
+    <string name="rupee_amount">&#x20B9;</string>
+    <string name="minus_rupee_amount">- &#x20B9;</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="save">Save</string>
+    <string name="placeholder_ac_number">* * * *</string>
+    <string name="text_valid_from">VALID FROM</string>
+    <string name="placeholder_cvv">* * *</string>
+    <string name="text_cvv">CVV</string>
+    <string name="text_your_balance">Your balance</string>
+    <string name="item_expenses">Expenses</string>
+    <string name="item_transaction">Transaction</string>
+    <string name="item_stats">Stats</string>
+</resources>

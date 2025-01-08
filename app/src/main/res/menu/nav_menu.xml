@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/ic_home"/>
+
+    <item
+        android:id="@+id/account"
+        android:title="Account"
+        android:icon="@drawable/ic_person"/>
+
+    <item
+        android:title="Manage">
+        <menu>
+            <item
+                android:id="@+id/manageCategory"
+                android:title="Manage Category"
+                android:icon="@drawable/ic_category"
+                />
+        </menu>
+    </item>
+
+    <item
+        android:title="Add">
+        <menu>
+            <item
+                android:id="@+id/addCategory"
+                android:title="Add Category"
+                android:icon="@drawable/ic_add_category"/>
+            <item
+                android:id="@+id/addExpense"
+                android:title="Add Expense"
+                android:icon="@drawable/ic_add_expense"/>
+        </menu>
+    </item>
+
+    <item
+        android:title="Action">
+        <menu>
+            <item
+                android:id="@+id/close"
+                android:title="Close"
+                android:icon="@drawable/ic_close"/>
+        </menu>
+    </item>
+</menu>

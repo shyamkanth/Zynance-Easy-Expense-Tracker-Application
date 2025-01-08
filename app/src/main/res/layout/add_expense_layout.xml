@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/dialogTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add New Expense"
+        android:textColor="@color/primary_info"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Expense Category"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvErrorCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/primary_error"
+            android:textSize="11sp"
+            android:visibility="gone"
+            android:text="Category is required*"
+            android:layout_marginBottom="10dp"/>
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/spinnerCategoryName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_edittext"
+        android:padding="10dp"
+        android:textSize="14sp"
+        android:layout_marginBottom="20dp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Expense Amount"
+        android:layout_marginBottom="10dp"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etExpenseAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_edittext"
+        android:hint="Enter Expense Amount"
+        android:drawableEnd="@drawable/ic_rupee"
+        android:inputType="number"
+        android:padding="10dp"
+        android:textSize="14sp"
+        android:layout_marginBottom="20dp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Expense Date"
+        android:layout_marginBottom="10dp"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etExpenseDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_edittext"
+        android:hint="Enter Expense Date"
+        android:drawableEnd="@drawable/ic_calendar"
+        android:clickable="true"
+        android:inputType="date"
+        android:focusableInTouchMode="false"
+        android:cursorVisible="false"
+        android:padding="10dp"
+        android:textSize="14sp"
+        android:layout_marginBottom="20dp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Expense Description (Optional)"
+        android:layout_marginBottom="10dp"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etAddCategoryDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_edittext"
+        android:hint="Enter Expense Description "
+        android:padding="10dp"
+        android:inputType="textMultiLine"
+        android:gravity="start"
+        android:lines="4"
+        android:layout_marginBottom="20dp"
+        android:textSize="14sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnAddExpense"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/primary_info"
+            android:layout_marginEnd="10dp"
+            android:text="Add Expense"
+            android:textColor="@color/white"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnDelete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/primary_error"
+            android:text="Delete"
+            android:visibility="gone"
+            android:textColor="@color/white"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnCancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:background="@color/primary"
+            android:text="Cancel"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+
+</LinearLayout>
