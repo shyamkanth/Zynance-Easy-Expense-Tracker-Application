@@ -1,4 +1,4 @@
-# Zynance-Easy-Expense-Tracker-Application
+# Zynance : Easy Expense Tracker Application
 
 Zynance is an Android application designed for managing expenses. Users can perform CRUD operations on their expenses and expense categories. Additionally, the app provides various views to track expenses, including bar charts, pie charts, and a tabular view. With support for Room, Coroutines, and the MVVM architecture, this app ensures a clean and efficient approach to managing personal finances.
 
